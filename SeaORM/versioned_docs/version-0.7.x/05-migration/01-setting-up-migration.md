@@ -20,8 +20,7 @@ pub struct Model {
 
 Setup the migration directory by executing `sea-orm-cli migrate init`.
 
-> If you don't have `sea-orm-cli` installed yet, please refer to [Using sea-orm-cli][1]
-page to learn more about the Sea ORM CLI.
+> If you don't have `sea-orm-cli` installed yet, please refer to [Using sea-orm-cli](03-generate-entity/01-sea-orm-cli.md) page to learn more about the Sea ORM CLI.
 
 ```shell
 # Setup the migration directory in `./migration`
@@ -171,5 +170,3 @@ use entity::sea_orm;
 pub use entity::post;
 pub use entity::post::Entity as Post;
 ```
-
-[1]: https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli/
