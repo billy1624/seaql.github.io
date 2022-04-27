@@ -20,6 +20,9 @@ pub struct Model {
 
 Setup the migration directory by executing `sea-orm-cli migrate init`.
 
+> If you don't have `sea-orm-cli` installed yet, please refer to [Using sea-orm-cli][1]
+ page to learn more about the Sea ORM CLI.
+
 ```shell
 # Setup the migration directory in `./migration`
 $ sea-orm-cli migrate init
