@@ -46,12 +46,12 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://crates.io/crates/starfish-ql',
+          to: 'https://crates.io/crates/starfish-ql',
           label: 'Crate',
           position: 'right',
         },
         {
-          href: 'https://github.com/SeaQL/starfish-ql',
+          to: 'https://github.com/SeaQL/starfish-ql',
           label: 'GitHub',
           position: 'right',
         },
@@ -87,15 +87,15 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/SeaQL/starfish-ql/discussions',
+              to: 'https://github.com/SeaQL/starfish-ql/discussions',
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/uCPdDXzbdv',
+              to: 'https://discord.com/invite/uCPdDXzbdv',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/sea_ql',
+              to: 'https://twitter.com/sea_ql',
             },
           ],
         },
@@ -116,13 +116,11 @@ module.exports = {
       ],
       copyright: [
         `<br/><div style="display: flex; justify-content: center;"><a href="https://github.com/SeaQL/starfish-ql/stargazers/" target="_blank"><img src="https://img.shields.io/github/stars/SeaQL/starfish-ql.svg?style=social&label=Star&maxAge=1"/></a></div>`,
-        `<br/>Copyright © ${new Date().getFullYear()} SeaQL`,
+        `<br/>Copyright © ${new Date().getFullYear()} SeaQL.org`,
         `<br/>Built with 🔥 by 🌊🦀🐚`,
       ].join(''),
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
       additionalLanguages: [
         'toml',
         'rust',

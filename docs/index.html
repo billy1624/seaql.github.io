@@ -111,7 +111,7 @@
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body1">
-                    In the long term, we want to support all open source SQL, NewSQL and NoSQL databases, providing a uniform developer experience to data analytics, transaction processing, schema management and other data engineering work.
+                    We help developers in building data intensive applications in Rust, whether they are web services (GraphQL, gRPC, REST), command line tools or apps.
                   </Typography>
                 </Grid>
               </Grid>
@@ -141,7 +141,7 @@
                 </Grid>
                 <Grid item xs={12}>
                   <Typography variant="body1">
-                    We help developers in building data intensive applications in Rust, whether they are web services (GraphQL, gRPC, REST), command line tools or apps.
+                    In the long term, we want to support all open source SQL, NewSQL and NoSQL databases, providing a uniform developer experience to data analytics, transaction processing and other data engineering work.
                   </Typography>
                 </Grid>
               </Grid>
@@ -195,7 +195,7 @@
                       </Typography>
                     </Link>
                     <Typography variant="body1" sx={{ textAlign: 'center' }}>
-                      A relational ORM to help you build web services in Rust with the familiarity of dynamic languages.
+                      🐚 An async & dynamic ORM for Rust.
                     </Typography>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                       <Chip
@@ -210,7 +210,7 @@
                       <Chip
                         label="Docs"
                         component="a"
-                        href="https://www.sea-ql.org/SeaORM"
+                        href="/SeaORM/"
                         variant="outlined"
                         size="small"
                         sx={{ marginTop: '10px', marginRight: '10px' }}
@@ -246,7 +246,7 @@
                       </Typography>
                     </Link>
                     <Typography variant="body1" sx={{ textAlign: 'center' }}>
-                      A query builder to help you construct dynamic SQL queries in Rust.
+                      🔱 A dynamic SQL query builder for MySQL, Postgres and SQLite.
                     </Typography>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                       <Chip
@@ -288,7 +288,7 @@
                       </Typography>
                     </Link>
                     <Typography variant="body1" sx={{ textAlign: 'center' }}>
-                      A library to help you manage database schema.
+                      🌿 A library to help you manage database schema.
                     </Typography>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                       <Chip
@@ -330,7 +330,7 @@
                       </Typography>
                     </Link>
                     <Typography variant="body1" sx={{ textAlign: 'center' }}>
-                      A graph database and query engine to enable graph analysis and visualization on the web.
+                      ✴️ A graph database and query engine to enable graph analysis and visualization on the web.
                     </Typography>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                       <Chip
@@ -345,7 +345,7 @@
                       <Chip
                         label="Docs"
                         component="a"
-                        href="https://www.sea-ql.org/StarfishQL"
+                        href="/StarfishQL/"
                         variant="outlined"
                         size="small"
                         sx={{ marginTop: '10px', marginRight: '10px' }}
@@ -353,6 +353,48 @@
                       />
                       <a href="https://github.com/SeaQL/starfish-ql/stargazers" style={{ margin: '10px 10px 0px 0px' }}>
                         <img src="https://img.shields.io/github/stars/SeaQL/starfish-ql.svg?style=social&label=Star&maxAge=1" alt="Star StarfishQL" height="22px" />
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Card
+                  variant="elevation"
+                  elevation={3}
+                  style={{ height: '100%' }}
+                  className="projects-underline projects-underline-4"
+                >
+                  <CardContent>
+                    <Link href="https://github.com/SeaQL/seaography" underline="none" color="inherit">
+                      <Typography variant="h5" component="h1" align="center" sx={{ fontWeight: 600 }} gutterBottom>
+                        Seaography
+                      </Typography>
+                    </Link>
+                    <Typography variant="body1" sx={{ textAlign: 'center' }}>
+                      🧭 A GraphQL framework and code generator for SeaORM
+                    </Typography>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                      <Chip
+                        label="GitHub"
+                        component="a"
+                        href="https://github.com/SeaQL/seaography"
+                        variant="outlined"
+                        size="small"
+                        sx={{ marginTop: '10px', marginRight: '10px' }}
+                        clickable
+                      />
+                      <Chip
+                        label="Docs"
+                        component="a"
+                        href="/Seaography/"
+                        variant="outlined"
+                        size="small"
+                        sx={{ marginTop: '10px', marginRight: '10px' }}
+                        clickable
+                      />
+                      <a href="https://github.com/SeaQL/seaography/stargazers" style={{ margin: '10px 10px 0px 0px' }}>
+                        <img src="https://img.shields.io/github/stars/SeaQL/seaography.svg?style=social&label=Star&maxAge=1" alt="Star Seaography" height="22px" />
                       </a>
                     </div>
                   </CardContent>
@@ -370,31 +412,31 @@
               </Grid>
               <Grid item xs={12} sm={6} md={3} style={{ display: 'flex', alignItems: 'center' }}>
                 <Link href="https://github.com/tyt2y3" underline="hover">
-                  <Avatar alt="Émile Fugulin" src="https://avatars.githubusercontent.com/u/1782664?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
+                  <Avatar alt="Chris Tsang" src="https://avatars.githubusercontent.com/u/1782664?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
                 </Link>
                 <Typography variant="body1" sx={{ textAlign: 'center' }}>
                   Chris Tsang
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={6} md={3} style={{ display: 'flex', alignItems: 'center' }}>
-                <Link href="https://github.com/ikrivosheev" underline="hover">
-                  <Avatar alt="Émile Fugulin" src="https://avatars.githubusercontent.com/u/6786239?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
-                </Link>
-                <Typography variant="body1" sx={{ textAlign: 'center' }}>
-                  Ivan Krivosheev
-                </Typography>
-              </Grid>
-              <Grid item xs={12} sm={6} md={3} style={{ display: 'flex', alignItems: 'center' }}>
                 <Link href="https://github.com/billy1624" underline="hover">
-                  <Avatar alt="Émile Fugulin" src="https://avatars.githubusercontent.com/u/30400950?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
+                  <Avatar alt="Billy Chan" src="https://avatars.githubusercontent.com/u/30400950?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
                 </Link>
                 <Typography variant="body1" sx={{ textAlign: 'center' }}>
                   Billy Chan
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={6} md={3} style={{ display: 'flex', alignItems: 'center' }}>
+                <Link href="https://github.com/ikrivosheev" underline="hover">
+                  <Avatar alt="Ivan Krivosheev" src="https://avatars.githubusercontent.com/u/6786239?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
+                </Link>
+                <Typography variant="body1" sx={{ textAlign: 'center' }}>
+                  Ivan Krivosheev
+                </Typography>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3} style={{ display: 'flex', alignItems: 'center' }}>
                 <Link href="https://github.com/shpun817" underline="hover">
-                  <Avatar alt="Émile Fugulin" src="https://avatars.githubusercontent.com/u/47468266?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
+                  <Avatar alt="Sanford Pun" src="https://avatars.githubusercontent.com/u/47468266?v=4" sx={{ width: 50, height: 50, marginRight: 2 }} />
                 </Link>
                 <Typography variant="body1" sx={{ textAlign: 'center' }}>
                   Sanford Pun
@@ -415,12 +457,36 @@
                   Your participation is what makes us unique; your adoption is what drives us forward. Thank you all in the Rust community for making SeaQL what it is today. You are also invited to shape it's future!
                 </Typography>
                 <br />
-                <img src="https://api.star-history.com/svg?repos=seaql/sea-orm,seaql/sea-query,seaql/sea-schema,seaql/starfish-ql&type=Timeline" alt="SeaQL Star History" style={{ width: '100%', maxWidth: '888px' }} />
+                <img src="https://api.star-history.com/svg?repos=seaql/sea-orm,seaql/sea-query,seaql/sea-schema,seaql/starfish-ql,seaql/seaography&type=Timeline" alt="SeaQL Star History" style={{ width: '100%', maxWidth: '888px' }} />
                 <Typography variant="body1" sx={{ textAlign: 'center' }}>
                   Please star our repos! Every ⭐ counts!
                 </Typography>
               </Grid>
             </Grid>
+          </Container>
+          <div class="rule rule-gradient"></div>
+          <Container maxWidth="lg" style={{ padding: '48px' }}>
+            <Grid container spacing={3} style={{ justifyContent: 'center' }}>
+              <Grid item xs={12}>
+                <Typography variant="h4" component="h2" align="center" sx={{ fontWeight: 600 }} gutterBottom>
+                  SeaQL is Supported By
+                </Typography>
+              </Grid>
+              <Grid item xs={6} sm={4} md={4} style={{ display: 'flex', alignItems: 'center' }}>
+                <Link href="https://www.digitalocean.com/" underline="hover" style={{ margin: 'auto' }}>
+                  <img alt="DigitalOcean" src="img/sponsors/DigitalOcean.svg" style={{ maxWidth: '120px', width: '100%' }} />
+                </Link>
+              </Grid>
+              <Grid item xs={6} sm={4} md={4} style={{ display: 'flex', alignItems: 'center' }}>
+                <Link href="https://www.jetbrains.com/" underline="hover" style={{ margin: 'auto' }}>
+                  <img alt="JetBrains" src="img/sponsors/JetBrains.svg" style={{ maxWidth: '120px', width: '100%' }} />
+                </Link>
+              </Grid>
+            </Grid>
+            <br />
+            <Typography variant="body1" sx={{ textAlign: 'center' }}>
+              Our <Link href="https://github.com/sponsors/SeaQL" underline="hover">GitHub Sponsor</Link> profile is up! If you feel generous, a small donation will be greatly appreciated.
+            </Typography>
           </Container>
           <Paper
             elevation={10}
@@ -429,14 +495,14 @@
           >
             <Container maxWidth="lg" style={{ padding: '28px 38px' }}>
               <Grid container spacing={3}>
-                <Grid item xs={12} sm={4} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
+                <Grid item xs={12} sm={4} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column', paddingLeft: '0 !important'  }}>
                   <img src="img/SeaQL logo.png" alt="SeaQL Logo" style={{ maxWidth: '150px', width: '100%' }} />
                   <Typography component="span" variant="body2" sx={{ paddingLeft: '10px', fontWeight: '100' }}>
-                    Copyright © {new Date().getFullYear()} SeaQL
+                    Copyright © {new Date().getFullYear()} SeaQL.org
                   </Typography>
                 </Grid>
                 <Grid item xs={6} sm={4} sx={{ display: 'flex', alignItems: 'left', flexDirection: 'column' }}>
-                  <Link href="https://www.sea-ql.org/blog" variant="body2" underline="hover" gutterBottom>
+                  <Link href="/blog/" variant="body2" underline="hover" gutterBottom>
                     Blog
                   </Link>
                   <Link href="https://github.com/SeaQL" variant="body2" underline="hover" gutterBottom>
@@ -467,6 +533,9 @@
                   </Link>
                   <Link href="https://www.sea-ql.org/StarfishQL/" variant="body2" underline="hover" gutterBottom>
                     StarfishQL
+                  </Link>
+                  <Link href="https://www.sea-ql.org/Seaography/" variant="body2" underline="hover" gutterBottom>
+                    Seaography
                   </Link>
                 </Grid>
               </Grid>

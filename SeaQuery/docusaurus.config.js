@@ -16,6 +16,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'SeaQL',
   projectName: 'sea-query',
+  trailingSlash: true,
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
@@ -102,11 +103,11 @@ module.exports = {
           ],
         },
       ],
-      copyright: `<br/>Copyright © ${new Date().getFullYear()} SeaQL<br/>Built with 🔥 by 🌊🦀🐚`,
+      copyright: [
+        `Copyright © ${new Date().getFullYear()} SeaQL.org`,
+      ].join(''),
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
       additionalLanguages: [
         'toml',
         'rust',
@@ -118,7 +119,6 @@ module.exports = {
     //   indexName: 'seaorm',
     //   contextualSearch: true,
     // },
-    hideableSidebar: true,
   },
   presets: [
     [
@@ -145,7 +145,6 @@ module.exports = {
         sitemap: {
           changefreq: 'daily',
           priority: 0.8,
-          trailingSlash: true,
         },
       },
     ],

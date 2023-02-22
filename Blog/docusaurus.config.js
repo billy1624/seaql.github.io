@@ -16,7 +16,7 @@ module.exports = {
     },
     image: 'img/SeaQL logo.png',
     metadata: [
-      {name: 'keywords', content: 'rust, orm, SeaORM, SeaQuery, SeaSchema, StarfishQL, database, sql, mysql, sqlite, postgresql, rocket, tokio, sqlx, actix, async-std'},
+      {name: 'keywords', content: 'rust, orm, SeaORM, SeaQuery, SeaSchema, Seaography, StarfishQL, database, sql, mysql, sqlite, postgresql, rocket, tokio, sqlx, actix, async-std'},
     ],
     navbar: {
       title: 'SeaQL',
@@ -24,6 +24,7 @@ module.exports = {
         alt: 'SeaQL Logo',
         src: 'img/SeaQL.png',
         href: 'https://www.sea-ql.org',
+        target: '_self',
       },
       items: [
         {
@@ -32,7 +33,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/SeaQL',
+          to: 'https://github.com/SeaQL',
           label: 'GitHub',
           position: 'left',
         },
@@ -46,70 +47,68 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/SeaQL',
+              to: 'https://github.com/SeaQL',
             },
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/uCPdDXzbdv',
+              to: 'https://discord.com/invite/uCPdDXzbdv',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/sea_ql',
+              to: 'https://twitter.com/sea_ql',
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/sea-ql',
+              to: 'https://www.linkedin.com/company/sea-ql',
             },
             {
               label: 'DEV',
-              href: 'https://dev.to/seaql',
+              to: 'https://dev.to/seaql',
             },
             {
               label: 'GSoC',
-              href: 'https://summerofcode.withgoogle.com/programs/2022/organizations/seaql',
+              to: 'https://summerofcode.withgoogle.com/programs/2022/organizations/seaql',
             },
           ],
         },
         {
-          title: 'Project',
+          title: 'Projects',
           items: [
             {
               label: 'SeaORM',
-              href: 'https://github.com/SeaQL/sea-orm',
+              to: 'https://www.sea-ql.org/SeaORM/',
             },
             {
               label: 'SeaQuery',
-              href: 'https://github.com/SeaQL/sea-query',
-            },
-            {
-              label: 'SeaSchema',
-              href: 'https://github.com/SeaQL/sea-schema',
+              to: 'https://github.com/SeaQL/sea-query',
             },
             {
               label: 'StarfishQL',
-              href: 'https://github.com/SeaQL/starfish-ql',
+              to: 'https://www.sea-ql.org/StarfishQL/',
+            },
+            {
+              label: 'Seaography',
+              to: 'https://www.sea-ql.org/Seaography/',
             },
           ],
         },
       ],
       copyright: [
-        `<br/>Copyright © ${new Date().getFullYear()} SeaQL`,
+        `<br/>Copyright © ${new Date().getFullYear()} SeaQL.org`,
       ].join(''),
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
       additionalLanguages: [
         'toml',
         'rust',
       ],
     },
-    // algolia: {
-    //   appId: 'F60BRNGE7P',
-    //   apiKey: 'cb0fff4f36dcd0f3d6a97e12e494dec7',
-    //   indexName: 'seaorm',
-    //   contextualSearch: true,
-    // },
+    algolia: {
+      appId: 'SLLZ32J41K',
+      apiKey: 'c115bc77747b9ab31b84d01c1c5c1a0a',
+      indexName: 'sea-ql',
+      contextualSearch: true,
+    },
   },
   presets: [
     [

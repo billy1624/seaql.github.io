@@ -8,7 +8,7 @@ function getNextMinorVersionName() {
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'SeaORM 🐚 An async & dynamic ORM for Rust',
-  tagline: '🐚 SeaORM is a relational ORM to help you build web services in Rust with the familiarity of dynamic languages.',
+  tagline: '🐚 SeaORM is a relational ORM to help you build web services in Rust',
   url: 'https://www.sea-ql.org',
   baseUrl: '/SeaORM/',
   onBrokenLinks: 'throw',
@@ -46,7 +46,12 @@ module.exports = {
         },
         {
           to: 'https://www.sea-ql.org/sea-orm-tutorial/',
-          label: 'Tutorials',
+          label: 'Tutorial',
+          position: 'left',
+        },
+        {
+          to: 'https://www.sea-ql.org/sea-orm-cookbook/',
+          label: 'Cookbook',
           position: 'left',
         },
         {
@@ -63,7 +68,6 @@ module.exports = {
           type: 'docsVersionDropdown',
           position: 'right',
           dropdownActiveClassDisabled: true,
-
         },
       ],
     },
@@ -78,8 +82,12 @@ module.exports = {
               to: '/docs/index',
             },
             {
-              label: 'SeaORM Tutorials',
+              label: 'SeaORM Tutorial',
               to: 'https://www.sea-ql.org/sea-orm-tutorial/',
+            },
+            {
+              label: 'SeaORM Cookbook',
+              to: 'https://www.sea-ql.org/sea-orm-cookbook/',
             },
             {
               label: 'API Reference',
@@ -124,17 +132,20 @@ module.exports = {
               label: 'StarfishQL',
               to: 'https://www.sea-ql.org/StarfishQL/',
             },
+            {
+              label: 'Seaography',
+              to: 'https://www.sea-ql.org/Seaography/',
+            },
           ],
         },
       ],
       copyright: [
-        `<br/><div style="display: flex; justify-content: center;"><a href="https://github.com/SeaQL/sea-orm/stargazers/" target="_blank"><img src="https://img.shields.io/github/stars/SeaQL/sea-orm.svg?style=social&label=Star&maxAge=1"/></a></div>`,
-        `<br/>Copyright © ${new Date().getFullYear()} SeaQL`,
+        `<br/><a href="https://github.com/SeaQL/sea-orm/stargazers/" target="_blank"><img src="https://img.shields.io/github/stars/SeaQL/sea-orm.svg?style=social&label=Star"/></a>`,
+        '<br/>Every ⭐ counts!',
+        `<br/>Copyright © ${new Date().getFullYear()} SeaQL.org`,
       ].join(''),
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
       additionalLanguages: [
         'toml',
         'rust',
