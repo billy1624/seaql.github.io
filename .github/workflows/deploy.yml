@@ -41,16 +41,16 @@ jobs:
             SeaStreamer/.docusaurus
             SeaStreamer/build
 
-      - if: ${{ contains(steps.git-log.outputs.message, '[SeaORM]') }}
+      - if: ${{ contains(steps.git-log.outputs.message, '[SeaORM]') }} || ${{ contains(steps.git-log.outputs.message, '[full]') }}
         run: sh build-site.sh SeaORM SeaORM
 
-      - if: ${{ contains(steps.git-log.outputs.message, '[blog]') }}
+      - if: ${{ contains(steps.git-log.outputs.message, '[blog]') }} || ${{ contains(steps.git-log.outputs.message, '[full]') }}
         run: sh build-site.sh Blog blog
 
-      - if: ${{ contains(steps.git-log.outputs.message, '[Seaography]') }}
+      - if: ${{ contains(steps.git-log.outputs.message, '[Seaography]') }} || ${{ contains(steps.git-log.outputs.message, '[full]') }}
         run: sh build-site.sh Seaography Seaography
 
-      - if: ${{ contains(steps.git-log.outputs.message, '[SeaStreamer]') }}
+      - if: ${{ contains(steps.git-log.outputs.message, '[SeaStreamer]') }} || ${{ contains(steps.git-log.outputs.message, '[full]') }}
         run: sh build-site.sh SeaStreamer SeaStreamer
 
       - uses: JamesIves/github-pages-deploy-action@v4
