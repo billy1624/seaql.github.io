@@ -41,6 +41,9 @@ jobs:
             SeaStreamer/.docusaurus
             SeaStreamer/build
 
+      - id: git-log
+        run: echo "message=$(git log --no-merges -1 --oneline)" >> $GITHUB_OUTPUT
+
       - if: ${{ contains(steps.git-log.outputs.message, '[SeaORM]') }} || ${{ contains(steps.git-log.outputs.message, '[full]') }}
         run: sh build-site.sh SeaORM SeaORM
 
