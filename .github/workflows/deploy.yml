@@ -6,7 +6,6 @@ on:
       - '.github/ISSUE_TEMPLATE/**'
     branches:
       - master
-      - ci-speedup
 
 concurrency:
   group: seaql.github.io
