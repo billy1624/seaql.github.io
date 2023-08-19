@@ -6,6 +6,7 @@ on:
       - '.github/ISSUE_TEMPLATE/**'
     branches:
       - master
+      - ci-speedup
 
 concurrency:
   group: seaql.github.io
@@ -40,11 +41,21 @@ jobs:
             SeaStreamer/.docusaurus
             SeaStreamer/build
 
-      - run: sh build.sh
+      - if: ${{ contains(steps.git-log.outputs.message, '[SeaORM]') }}
+        run: sh build-site.sh SeaORM SeaORM
+
+      - if: ${{ contains(steps.git-log.outputs.message, '[blog]') }}
+        run: sh build-site.sh Blog blog
+
+      - if: ${{ contains(steps.git-log.outputs.message, '[Seaography]') }}
+        run: sh build-site.sh Seaography Seaography
+
+      - if: ${{ contains(steps.git-log.outputs.message, '[SeaStreamer]') }}
+        run: sh build-site.sh SeaStreamer SeaStreamer
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs
-          clean: true
+          clean: false
           clean-exclude: preview
